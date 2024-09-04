@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikandan Ashok | Aboutme</title>
+    <link rel="icon" href="./assets/titelorg.png" type="image/x-icon">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <video src="../videos/555.mp4" loop autoplay muted></video>
+    <a class="back-btn" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="800"
+                    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+                    data-aos-anchor-placement="top-center" class="about-col-1">
+                    <img src="./assets/aboutimg1.jpg" alt="">
+                </div>
+                <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="0" data-aos-duration="800"
+                    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+                    data-aos-anchor-placement="top-center" class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I am a Front-end developer specializing in creating responsive and user-friendly web interfaces
+                        using React.js.</p>
+                    <p>I have experience as a Frontend Development Intern at VEBBOX, where I developed the frontend from
+                        scratch using HTML, CSS, JavaScript, and React, significantly enhancing the user experience.</p>
+                    <p>My expertise lies in building responsive and dynamic web applications, with a strong focus on
+                        user experience, performance optimization, and writing clean, maintainable code.</p>
+                    <p>My projects include professional networking sites and real-time systems, where I've applied my
+                        skills in both design and implementation. I also have experience working on e-commerce websites
+                        and Tourist projects. Always striving for clean and efficient code, I continuously learn and
+                        evolve to stay updated with the latest industry trends. My goal is to craft visually appealing
+                        and highly functional web applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Interests</p>
+                        <p class="tab-links" onclick="opentab('experience')">Education</p>
+                        <p class="tab-links" onclick="opentab('education')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical</span><br>Fullstack, MachineLearning, Artificial intelligence.</li>
+                            <li><span>Non-Technical</span><br>Editing, Networking, ContentCreation.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="edu">2020-2024</span><br>B.E (CSE) 8.1 CGPA </li>
+                            <li><span>2019-2020</span><br>HSC with 75%</li>
+                            <li><span>2017-2018</span><br>SSLC with 74%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+</body>
+</html>

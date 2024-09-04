@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikandan Ashok | Contact Me</title>
+    <link rel="icon" href="./assets/titelorg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <video src="../videos/3.mp4" loop autoplay muted></video>
+    <a class="back-btn" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="800"
+                    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+                    data-aos-anchor-placement="top-center" class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a style="text-decoration: none; color: #ffffff;"
+                            href="mailto:manikandanashok2002@gmail.com">manikandanashok2002@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a style="text-decoration: none; color: #ffffff;"
+                            href="tel:9944895618">+91 9944895618</a></p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/manikandan-ashok/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Manikandan-V-A" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/its_neon_x_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/manikandanashok.va" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@manikandan-ashok" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com/Mani_Ashok_Mk" target="_blank" ><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="./assets/NM.pdf" download="NM.pdf" class="btn btn2">Download CV</a>
+                    <a href="./assets/NM.pdf" target="_blank" class="btn btn2">View CV</a>
+                </div>
+                <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="0" data-aos-duration="800"
+                    data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+                    data-aos-anchor-placement="top-center" class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxeMZC-gqhQhW7kOGlspVncE0pFns3k-rwGZ6Qkz2lejJdLHXHplVmQHZHvsPORtOXSMg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
