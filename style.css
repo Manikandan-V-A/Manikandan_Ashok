@@ -692,6 +692,9 @@ canvas {
     .bottom h3 {
         display: block;
     }
+    .bottom {
+        font-size: 7px;
+    }
 
 }
 

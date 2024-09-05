@@ -6,7 +6,21 @@
     font-family: gilroy;
 }
 .skills-left {
-    flex-basis: 35%;
+    flex-basis: 40%;
+}
+.skills-center {
+    flex-basis: 40%;
+}
+.skills-right {
+    flex-basis: 40%;
+}
+.tech-main{
+    flex-basis: 58%;
+}
+.tect-sub-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .row {
     display: flex;
@@ -27,6 +41,20 @@
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+}
+.heading12 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3a3a3a;
+    font-size: 20px;
+}
+.heading13 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3a3a3a;
+    font-size: 20px;
 }
 .sub-title {
     font-family: gilroy;
@@ -110,11 +138,11 @@ i{
 }
 
 .progressline.css span {
-    width: 80%;
+    width: 90%;
 }
 
 .progressline.boot span {
-    width: 70%;
+    width: 90%;
 }
 
 .progressline.js span {
@@ -122,18 +150,30 @@ i{
 }
 
 .progressline.react span {
-    width: 70%;
+    width: 80%;
 }
 
 .progressline.python span {
-    width: 65%;
+    width: 75%;
+}
+
+.progressline.mysql span {
+    width: 75%;
+}
+
+.progressline.django span {
+    width: 75%;
+}
+
+.progressline.mongodb span {
+    width: 75%;
 }
 
 
 .progressline span::after {
     position: absolute;
     padding: 1px 8px;
-    background-color: #000;
+    background-color: #3a3a3a;
     color: #fff;
     font-size: 12px;
     border-radius: 3px;
@@ -148,11 +188,11 @@ i{
 }
 
 .progressline.css span::after {
-    content: "80%";
+    content: "90%";
 }
 
 .progressline.boot span::after {
-    content: "70%";
+    content: "90%";
 }
 
 .progressline.js span::after {
@@ -160,11 +200,23 @@ i{
 }
 
 .progressline.react span::after {
-    content: "70%";
+    content: "80%";
 }
 
 .progressline.python span::after {
-    content: "65%";
+    content: "75%";
+}
+
+.progressline.mysql span::after {
+    content: "75%";
+}
+
+.progressline.django span::after {
+    content: "75%";
+}
+
+.progressline.mongodb span::after {
+    content: "75%";
 }
 
 .progressline span::before {
@@ -188,9 +240,6 @@ i{
     }
 }
 
-.skills-right {
-    flex-basis: 50%;
-}
 
 .radial-bars {
     display: flex;
@@ -288,16 +337,6 @@ i{
     position: absolute;
     top: 50%;
     left: 50%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid white;
-    background-color: #ff004f;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    border-radius: 50%; */
     transform: translate(-50%, -50%);
     font-size: 13px;
     font-weight: 800;
@@ -316,18 +355,12 @@ i{
     font-weight: 700;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+    margin-bottom: -20px;
 }
 
 
 @media only screen and (max-width: 1320px) {
 
-    .skills-left {
-        flex-basis: 35%;
-    }
-
-    .skills-right {
-        flex-basis: 50%;
-    }
 
     .header-text h1 {
         font-size: 50px;
@@ -346,15 +379,16 @@ i{
     .layer p {
         font-size: 10px;
     }
-}
-
-
-@media only screen and (max-width: 950px) {
-
     .skills-right {
         flex-basis: 100%;
     }
 
+    .skills-center {
+        flex-basis: 100%;
+    }
+    .tech-main{
+        flex-basis: 100%;
+    }
     .skills-list {
         justify-content: space-evenly;
     }
@@ -367,6 +401,19 @@ i{
     .skills-left {
         flex-basis: 100%;
     }
+    .heading13 {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #3a3a3a;
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    
 }
 
 
