@@ -395,7 +395,7 @@ line-height: 40px;
 
   .modal__card {
     border-radius: 10px;
-    height: 60%;
+    height: 75%;
     width: 95%;
     position: relative;
     background-color: var(--body-color);
@@ -488,3 +488,14 @@ video{
   
   }
 } 
+
+
+@media only screen and (max-width: 600px) {
+  @media (min-aspect-ratio: 16/9){
+    video{
+        width: 100%;
+        height: 100vh;
+    
+    }
+  }
+}

@@ -48,8 +48,8 @@ body {
 canvas {
     position: relative;
     z-index: 9;
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 #loop {
@@ -497,14 +497,14 @@ canvas {
         line-height: 1.5;
         font-size: 30px;
         color: #000000e7;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page1>#right-text>h3 {
         font-weight: 400;
         color: #7c7c7c;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
@@ -512,14 +512,14 @@ canvas {
         font-size: 35px;
         line-height: 1.5;
         font-family: gilroy;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page1>#left-text>h3 {
         color: #7c7c7c;
         font-weight: 400;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
         margin-top: 100px;
     }
@@ -528,21 +528,21 @@ canvas {
         position: absolute;
         top: 30%;
         left: 10%;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page2>#text1>h3 {
         color: #7c7c7c;
         font-weight: 400;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page2>#text1>h1 {
         font-size: 50px;
         line-height: 1.5;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
@@ -551,27 +551,27 @@ canvas {
         top: 55%;
         right: 10%;
         text-align: end;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page2>#text2>h1 {
         font-size: 50px;
         line-height: 1.5;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page2>#text2>h1 i {
         font-size: 30px;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page2>#text2>h3 {
         color: #7c7c7c;
         font-weight: 400;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
@@ -580,20 +580,20 @@ canvas {
         top: 40%;
         right: 10%;
         text-align: end;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page3>#text3>h3 {
         color: #7c7c7c;
         font-weight: 400;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
     #page3>#text3>h1 {
         font-size: 50px;
-        z-index: 10000;
+        z-index: 100;
         position: relative;
     }
 
@@ -628,23 +628,25 @@ canvas {
         z-index: 1000;
         position: relative;
     }
-
-    #nav>h3 {
+    #nav {
+        padding: 10px 2%;
+    }
+    #nav>a {
         font-family: gilroy;
         font-weight: 400;
         font-size: 15px;
-        border-left: 3px solid rgba(0, 0, 0, 0.822);
-        border-top: 3px solid rgba(0, 0, 0, 0.822);
-        border-bottom: 3px solid rgba(0, 0, 0, 0.815);
+        border-left: 2px solid rgba(0, 0, 0, 0.822);
+        border-top: 2px solid rgba(0, 0, 0, 0.822);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.815);
         background-color: #f1f1f1;
         padding: 6px 0px 6px 6px;
         /* border-radius: 10px 13px 13px 10px; */
     }
-    #nav>h3 span{
+    #nav>a span{
         font-family: gilroy;
         font-weight: 400;
         font-size: 15px;
-        background-color: #000000ea;
+        background-color: #000000e8;
         border-bottom: 1px solid black;
         color: #ffffffdc;
         padding: 6px 10px 6px 6px;
@@ -655,7 +657,7 @@ canvas {
     #loop {
         display: flex;
         position: absolute;
-        top: 20%;
+        top: 35%;
         height: 25%;
         width: 100%;
         font-size: 50px;
@@ -697,13 +699,13 @@ canvas {
     #loop {
         display: flex;
         position: absolute;
-        top: 10%;
+        top: 40%;
         height: 25%;
         width: 100%;
-        font-size: 30px;
+        font-size: 40px;
         white-space: nowrap;
         font-family: gilroy;
-        z-index: 10;
+        z-index: 0;
     }
 
     #nav ul {
@@ -739,16 +741,16 @@ canvas {
     }
 
     #page>.passage h3 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #page>.passage h1 {
         margin-bottom: 7px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #page>.passage h1 span {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #page>.passage h2 {
@@ -758,6 +760,16 @@ canvas {
 
     #page>.passage h2 span {
         font-size: 25px;
+    }
+
+    #page>.passage p {
+        font-size: 13px;
+    }
+
+    #page>.passage div a i{
+        margin-top: 10px;
+        margin-right: 15px;
+        font-size: 20px;
     }
 
     /* ----------------------------------------- */
@@ -795,7 +807,6 @@ canvas {
         color: #7c7c7c;
         font-weight: 400;
     }
-
 
 }
 
