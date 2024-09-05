@@ -704,7 +704,7 @@ canvas {
         width: 100%;
         font-size: 40px;
         white-space: nowrap;
-        font-family: gilroy;
+        font-family: 'Poppins', sans-serif;
         z-index: 0;
     }
 

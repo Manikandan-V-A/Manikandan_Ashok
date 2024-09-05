@@ -281,43 +281,15 @@ gsap.to(imageSeq, {
 
 images[1].onload = render;
 
-// function render() {
-//   context.globalAlpha = 1; // Set opacity to 30%
-//   scaleImage(images[imageSeq.frame], context);
-// }
-
-// function render() {
-//   if (canvas.width <= 600) {
-//     context.globalAlpha = 0.8; // Set opacity to 80% for widths <= 600px
-//   } else {
-//     context.globalAlpha = 1; // Set opacity to 100% for widths > 600px
-//   }
-//   scaleImage(images[imageSeq.frame], context);
-// }
-
-// function render() {
-//   context.clearRect(0, 0, canvas.width, canvas.height);
-
-//   if (canvas.width <= 600) {
-//     context.globalAlpha = 0.8; // Set opacity to 80% for widths <= 600px
-//     context.filter = "grayscale(50%) blur(1px)"; // Apply a 50% grayscale and 2px blur filter
-//   } else {
-//     context.globalAlpha = 1; // Set opacity to 100% for widths > 600px
-//     context.filter = "none"; // Remove filters
-//   }
-
-//   scaleImage(images[imageSeq.frame], context);
-// }
-
 function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
 
   if (canvas.width <= 1100) {
-    context.globalAlpha = 1; // Set opacity to 80% for widths <= 600px
-    context.filter = "brightness(90%) blur(0.5px)"; // Increase brightness by 20%
+    context.globalAlpha = 1;
+    context.filter = "brightness(95%) blur(0.8px)"; 
   } else {
-    context.globalAlpha = 1; // Set opacity to 100% for widths > 600px
-    context.filter = "none"; // Remove filters
+    context.globalAlpha = 1;
+    context.filter = "none";
   }
 
   scaleImage(images[imageSeq.frame], context);
