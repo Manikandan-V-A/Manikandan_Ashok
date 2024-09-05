@@ -286,7 +286,7 @@ function render() {
 
   if (canvas.width <= 1100) {
     context.globalAlpha = 1;
-    context.filter = "brightness(95%) blur(0.8px)"; 
+    context.filter = "brightness(90%) blur(0.2px)"; 
   } else {
     context.globalAlpha = 1;
     context.filter = "none";
